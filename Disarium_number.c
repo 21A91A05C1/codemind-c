@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int d,d1,res=0,rev=0,c=0,n,temp=0;
+    scanf("%d",&n);
+    temp=n;
+    while(n>0)
+    {
+        d=n%10;
+        rev=rev*10+d;
+        n=n/10;
+    }
+    n=temp;
+    while(rev>0)
+    {
+        d1=rev%10;
+        c++;
+        res=res+pow(d1,c);
+        rev=rev/10;
+    }
+    if(res==temp)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
