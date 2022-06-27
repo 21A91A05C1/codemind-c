@@ -2,22 +2,22 @@
 #include<math.h>
 int main()
 {
-    int m=0,i,d,n,t,c=2,j,a[1000],b[1000],p,k=0;
+    int t,n,i,c=0,j,a[10000],b[10000],p,d,m,k;
     scanf("%d",&t);
-    while(t)
+    while(t>0)
     {
-        k=0;
         m=0;
+        k=0;
         scanf("%d",&n);
-        for(i=0;i<n+100;i++)
+        for(i=0;i<=n+100;i++)
         {
             c=2;
             for(j=2;j<i;j++)
             {
-                if(i%j==0)
-                {
-                    c++;
-                }
+               if(i%j==0)
+               {
+                   c++;
+               }
             }
             if(c==2)
             {
