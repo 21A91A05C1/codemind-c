@@ -2,9 +2,9 @@
 #include<math.h>
 int main()
 {
-    int n,s;
+    int s,n;
     scanf("%d",&n);
-    s=(int)sqrt(n);
+    s= (int)sqrt(n);
     if(s*s==n)
     {
         printf("True");
@@ -13,4 +13,5 @@ int main()
     {
         printf("False");
     }
+    
 }
