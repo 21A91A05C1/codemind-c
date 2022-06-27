@@ -1,17 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,arr[100],m,l,k=0,c=0,arr1[100];
+    int n,arr[1000],i,k=0,a1[100],d=0;
     scanf("%d",&n);
     for(i=0;i<n;i++)
+    {
         scanf("%d",&arr[i]);
-    scanf("%d%d",&m,&l);
+    }
+    int a,b,c=0;
+    scanf("%d %d",&a,&b);
     for(i=0;i<n;i++)
     {
-        if(arr[i]>=m && arr[i]<=l)
+        if(arr[i]>=a && arr[i]<=b)
         {
             c++;
-            arr1[k]=arr[i];
+            a1[k]=arr[i];
             k++;
         }
     }
@@ -21,14 +24,14 @@ int main()
     }
     else
     {
-        int min=999;
+        int min=99;
         for(k=0;k<c;k++)
         {
-            if(min>arr1[k])
-            {
-                min=arr1[k];
-            }
+        if(min>a1[k])
+        {
+            min=a1[k];
         }
-        printf("%d",min);
+        }
+        printf("%d ",min);
     }
 }
