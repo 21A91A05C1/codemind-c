@@ -12,8 +12,6 @@ int main()
             d=n%10;
             sum=sum+d*d;
             n=n/10;
-            
-            
         }
         n=sum;
         
