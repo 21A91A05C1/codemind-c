@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,odd[1000],even[1000],arr[1000],o=0,e=0,co=0,ce=0;
+    int odd[1000],even[1000],i,n,arr[1000],k,c=0,d=0;
+    int k1;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -9,25 +10,25 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        if(arr[i]%2!=0)
+        if(arr[i]%2==0)
         {
-            o++;
-            odd[co]=arr[i];
-            co++;
+            c++;
+            even[k]=arr[i];
+            k++;
         }
         else
         {
-            e++;
-            even[ce]=arr[i];
-            ce++;
+            d++;
+            odd[k1]=arr[i];
+            k1++;
         }
     }
-    for(ce=0;ce<e;ce++)
+    for(i=0;i<c;i++)
     {
-        printf("%d ",even[ce]);
+        printf("%d ",even[i]);
     }
-    for(co=0;co<o;co++)
+    for(i=0;i<d;i++)
     {
-        printf("%d ",odd[co]);
+        printf("%d ",odd[i]);
     }
 }
