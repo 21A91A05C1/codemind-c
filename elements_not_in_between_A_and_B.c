@@ -1,22 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,arr[1000],m,k,flag=0;
+    int n,arr[100],i,sum=0;
     scanf("%d",&n);
     for(i=0;i<n;i++)
+    {
         scanf("%d",&arr[i]);
-    scanf("%d%d",&m,&k);
+    }
+    int a,b;
+    scanf("%d %d",&a,&b);
     for(i=0;i<n;i++)
     {
-        if(arr[i]<m || arr[i]>k)
+        if(arr[i]<a || arr[i]>b)
         {
             printf("%d ",arr[i]);
-            flag=1;
+            sum++;
         }
     }
-    if(flag==0)
+    if(sum==0)
     {
         printf("-1");
     }
-    
 }
