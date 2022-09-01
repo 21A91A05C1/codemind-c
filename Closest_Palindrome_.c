@@ -35,16 +35,12 @@ int main()
             break;
         }
     }
-
     if(abs(d-n)<abs(z-n))
     printf("%d",d);
     else if(abs(d-n)==abs(z-n))
-    {
-        printf("%d %d",d,z);
-    }
+    printf("%d %d",d,z);
     else
-    {
-        printf("%d",z);
-    }
+    printf("%d",z);
+    
     
 }
